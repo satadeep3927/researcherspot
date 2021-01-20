@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="x-icon" />
+    <link rel="icon" href="favicon.ico" type="x-icon" />
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome/css/brands.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.css" rel="stylesheet">
+    <title>Researchspot | share your thought</title>
+  </head>
+  <body class="container">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 id="exampleModalLabel">What's up with your research?</h5>
+            <form>
+              <div class="form-group">
+                <label for="image-upload" class="image-upload py-2 px-3"><b>+ Add Image</b></label>
+              <input type="file" class="form-control" id="image-upload" accept=".jpeg,.png,.jpg" required>
+              </div>
+              <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add a description..." required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Add relevant tags seperated with comma...">
+              </div>
+              <button type="submit" class="btn btn-success col-4">Post</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#">ResearcherSpot</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-4">
+            <a class="nav-link badge badge-success p-2 post-button my-auto d-block" href="#" data-toggle="modal" data-target="#exampleModal">Post</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link p-0 my-auto fa fa-bell" href="#"></a>
+          </li>
+          <li class="nav-item dropdown">
+          <a class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/inline.jpg" width="40" height="40" class="d-inline-block profile" ></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">My Profile</a>
+              <a class="dropdown-item" href="#">Bookmark</a>
+              <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-lg-6 col-md-8 col-12">
+        <div class="card" style="width: 100%;">
+          <div class="card-header bg-white pl-0"> <img src="images/inline.jpg" width="40" class="d-inline-block profile" alt="">  
+            Satadeep Dasgupta
+          </div>
+          <a href="post.html">
+          <img class="card-img-top thumb" src="https://www.researchgate.net/profile/David_Bell25/publication/325824373/figure/fig1/AS:638876842459139@1529331517823/Schematic-drawing-of-a-metal-organic-framework-MOF-structure-MOF-5-is-shown-in-the-fi.png" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <div class="card-title"><a class="fa fa-heart"></a><span>&nbsp;&nbsp;1</span></div>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+            <a href="#" class="readmore">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-12 ml-auto">
+        <div class="card profcard py-4 mb-4" style="width: 100%;">
+          <div class="mx-auto">
+          <img src="images/inline.jpg" width="150" class="d-block profile mx-auto mb-2" alt=""/>
+          <h5><b>Satadeep Dasgupta</b></h5>
+        </div>
+        <button class="btn btn-outline-dark mx-auto mt-auto logout">Log out</button>
+      </div>
+      <h5>Members</h5>
+      <div class="card membercard p-2 mb-4" style="width: 100%;">
+        <div class="mb-4"> <img src="images/inline.jpg" width="50" class="d-inline-block profile" alt="">  
+         <b class="ml-1">Satadeep Dasgupta</b>
+        </div>
+        <div class="mb-4"> <img src="images/inline.jpg" width="50" class="d-inline-block profile" alt="">  
+          <b class="ml-1">Satadeep Dasgupta</b>
+         </div>
+     </div>
+    </div>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
